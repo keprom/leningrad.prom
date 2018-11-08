@@ -194,6 +194,14 @@ class Billing extends Controller
 	{
 		parent::Controller();
 		set_time_limit(0);
+
+        $is_login = $this->session->userdata('is_login');
+        if ($is_login!=TRUE)
+        {
+            redirect("login/billing");
+            die();
+        }
+
 		$class_method=$this->uri->segment(1).'/'.$this->uri->segment(2);
         $user_id = $this->session->userdata('id');
         date_default_timezone_set('Asia/Almaty');
@@ -217,13 +225,7 @@ class Billing extends Controller
 
         $this->db->insert("industry.user_action", $action);
 		if ($class_method=='/') redirect("billing");
-		$is_login = $this->session->userdata('is_login');
-		
-		if ($is_login!=TRUE) 
-		{
-			redirect("login/billing"); 
-			die();
-		}
+
 		if (($this->session->userdata('login')=='programmist') or (($this->session->userdata('login')=='admin')and($class_method!='billing/oplata')))
 		{
 			if (($class_method!='billing/jpeg') and ($this->session->userdata('admin')=='programmist'))
