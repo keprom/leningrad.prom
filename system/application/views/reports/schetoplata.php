@@ -185,7 +185,7 @@ if (strlen($data_schet)==0){ echo datetostring($schetfactura_date->date);} else 
 	<br>
 	<table width=100%  >
 	<tr>
-	<td align=left>И.о. директора</td><td align=right>ВЫДАЛ (Ответственное лицо поставщика)</td>
+	<td align=left>Директор</td><td align=right>ВЫДАЛ (Ответственное лицо поставщика)</td>
 	</tr>
 	<tr>
 	<td align=left><?php echo $org->director; ?>____________</td><td align=right>Техник ____________________________</td>

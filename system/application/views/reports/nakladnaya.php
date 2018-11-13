@@ -204,7 +204,7 @@ foreach($s as $s2 ):
 					<table border=0 cellspacing=0 width=600px>
 						<tr>
 							<td width=250px>Отпуск разрешил
-							<td colspan=3>  <u><?php echo "И.о. директора ". trim($org->director);?></u> &nbsp;&nbsp;&nbsp;__________________</td></td>
+							<td colspan=3>  <u><?php echo "Директор ". trim($org->director);?></u> &nbsp;&nbsp;&nbsp;__________________</td></td>
 							<!--<td colspan=3>  <u><?php echo "Директор ". trim($org->director);?></u> &nbsp;&nbsp;&nbsp;__________________</td></td>-->
 						</tr>
 								<tr><td ></td>
