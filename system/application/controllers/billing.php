@@ -1165,8 +1165,9 @@ class Billing extends Controller
 		$data['tariff_value']=$_POST['tariff_value'];
 		$data['tariff_count']=$_POST['tariff_count'];
 		$data['data_schet']=$_POST['data_schet'];
-		
-		
+		if(!empty($_POST['edit6'])){
+            $data['firm']->edit6 = $_POST['edit6'];
+        }
 		$this->load->view("reports/schetoplata",$data);
 	}
 	function akt()
