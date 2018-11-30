@@ -221,7 +221,7 @@ foreach($s as $s2 ):
 						</tr><tr><td><br></td></tr><tr>
 							
 								<td>Отпустил </td>
-								<td colspan=3><u><?php echo "Аханова А.С.";?></u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__________________ </td></tr><tr>
+								<td colspan=3><u><?php echo "Жаркенова К.А.";?></u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__________________ </td></tr><tr>
 								<td></td>
 								<td colspan=2 align=left> <sup><i>(Ф.И.О.)</i></sup></td>
 								<td align=left> <sup><i>(Подпись)</i></sup></td></tr>
