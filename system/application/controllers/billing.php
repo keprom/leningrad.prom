@@ -122,7 +122,6 @@ class Billing extends Controller
         }
     }
 
-
     function perenos_nach()
     {
         set_time_limit(0);
@@ -155,8 +154,6 @@ class Billing extends Controller
             redirect('billing/pre_perehod');
         }
     }
-
-
 
     function d2($date)
 	{
