@@ -3980,7 +3980,23 @@ where firm_id={$this->uri->segment(3)} and data_finish is null";
         $this->load->view("other_reports/sf_verification", $data);
     }
 
+    public function migration()
+    {
+        $data['report'] = $this->db->get("shell.migration")->result();
+        $this->export_to_excel("other_reports/migration", $data,"ленинградский_пэу");
+//        $this->load->view("other_reports/migration", $data);
+    }
 
+    private function export_to_excel($view_name, $data, $title = "Example")
+    {
+        $title .= '_' . date("Ymd");
+        $title .= '.xls';
+        header("Content-type: application/vnd.ms-excel");
+        header("Content-Disposition: attachment; filename={$title}");
+        header("Expires: 0");
+        header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+        $this->load->view($view_name, $data);
+    }
 }
 
 ?>
