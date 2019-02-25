@@ -1153,7 +1153,11 @@ class Billing extends Controller
 		$data['number']=$_POST['number_schet']==""?$data['schetfactura_date']->id:$_POST['number_schet'];
 		$this->db->where('id',$_POST['period_id']);
 		$data['period']=$this->db->get('industry.period')->row();
-		
+        $an_dog = trim($_POST['another_dog']);
+        if (!empty($_POST['another_dog'])){
+            $data['another_dog'] = $_POST['another_dog'];
+        }
+        $data['alt_title'] = $_POST['alt_title'];
 		$this->db->where('id',$data['firm']->bank_id);
 		$data['bank']=$this->db->get("industry.bank")->row();
 		$data['schet']=!isset($_POST['schet'])?" ОПЛАТА":"-ФАКТУРА";

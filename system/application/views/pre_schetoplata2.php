@@ -6,6 +6,8 @@ echo "<input type=hidden name=tariff_count value=".$tariffs->num_rows()." >";
 echo "Другая дата <input  name=data_schet value='' ><br>";
 echo "Другой номер счета оплаты <input  name=number_schet value='' ><br>";
 echo "Грузополучатель <input  name='edit6' value='' ><br>";
+echo "Другой номер договора <input name=another_dog value=''><br>";
+echo "Тип учета <input type=text name=alt_title value='Электроэнергия'><br>";
 echo "<input type=hidden name=type value='by_tenge' >";
 echo "Выдать счет фактурой <input type=checkbox name=schet  ><br>";
 
@@ -28,6 +30,8 @@ echo "<input type=hidden name=tariff_count value=".$tariffs->num_rows()." >";
 echo "Другая дата <input  name=data_schet value='' ><br>";
 echo "Другой номер счета оплаты <input  name=number_schet value='' ><br>";
 echo "Грузополучатель <input  name='edit6' value='' ><br>";
+echo "Другой номер договора <input name=another_dog value=''><br>";
+echo "Тип учета <input type=text name=alt_title value='Электроэнергия'><br>";
 echo "Выдать счет фактурой <input type=checkbox name=schet   ><br>";
 
 $i=0;

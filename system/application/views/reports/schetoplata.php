@@ -51,7 +51,7 @@ if (strlen($data_schet)==0){ echo datetostring($schetfactura_date->date);} else 
  <td></td>
  </tr>
  <tr>
- <td width=2100px> Договор(контракт) на поставку товаров (работ, услуг) №<u><?php echo $firm->dogovor."        </u> от <u>       ".datetostring($firm->dogovor_date);?>                 </u></td>
+     <td width=2100px> Договор(контракт) на поставку товаров (работ, услуг) №<u><?php echo isset($another_dog)?$another_dog:$firm->dogovor; echo "        </u> от <u>       ".datetostring($firm->dogovor_date);?>                 </u></td>
  <td> (3)</td>
  </tr>
  <tr>
@@ -145,7 +145,7 @@ if (strlen($data_schet)==0){ echo datetostring($schetfactura_date->date);} else 
 	?>
 	<TR>
 		<TD vAlign=center align=middle><FONT size=1><?php echo $i++;?> </FONT> 
-		<TD vAlign=center align=middle><FONT size=1>Электроэнергия</FONT> 
+		<TD vAlign=center align=middle><FONT size=1><?php echo $alt_title;?></FONT>
 		<TD vAlign=center align=middle><FONT size=1>кВт</FONT> 
 		<TD vAlign=center align=middle><FONT size=1> 
 		<?php echo f_d($tariff_kvt[$j]); ?> </FONT> 
